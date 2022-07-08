@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>The Capital Burguer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] -The Capital Burguer</title>
+
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/animate.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="~/css/templatemo-style.css">
+
+
+</head>
+
+<body>
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+
+            <span class="spinner-rotate"></span>
+
+        </div>
+    </section>
+
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+
+                <!-- NOMBRE DE LA EMPRESA -->
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">The Capital Burguer<span></span></a>
+            </div>
+
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                    </li>
+                    <li><a href="#about" class="smoothScroll">Acerca de la empresa</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Menu2">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Pedidos" asp-action="Create">Pedido</a>
+                    </li>
+                    <li><a href="#contact" class="smoothScroll">Ubicación</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Llame al<i class="fa fa-phone"></i>7331424481</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HOME -->
+    <section id="home" class="slider" data-stellar-background-ratio="0.5">
+        <div class="row">
+
+            <div class="owl-carousel owl-theme">
+                <div class="item item-first">
+                    <div class="caption">
+                        <div class="container">
+                            <div class="col-md-8 col-sm-12">
+                                <h3>THE CAPITAL BURGUER</h3>
+                                <h1>VEN A PROBAR NUESTRAS DELICIOSAS HAMBURGUESAS</h1>
+                                <a href="#menu" class="section-btn btn btn-default smoothScroll">Imagenes del Menú</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item item-second">
+                    <div class="caption">
+                        <div class="container">
+                            <div class="col-md-8 col-sm-12">
+                                <h3>The Capital Burguer</h3>
+                                <h1>NUESTRA MISIÓN ES BRINDAR UNA EXPERIENCIA INOLVIDABLE</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- ACERCA DE LA EMPRESA -->
+    <section id="about" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="about-info">
+                        <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                            <h2>OFRECIENDO NUESTRO EXCELENTE SERVICIO DESDE 2016</h2>
+                        </div>
+
+                        <div class="wow fadeInUp" data-wow-delay="0.4s">
+                            <p>La empresa The Capital Burguer se fundo en el año de 2016 por el señor Luis Antonio Mastache Tapia, desde un 
+                            inicio dicho establecimiento empezó su venta solo por servicio a domicilio, ya que no contaba con un local</p>
+                            <p>Actualmente ya cuenta con un local donde podras de degustar sus deliciosas hamburguesas
+                            (Contamos con todas las medidas de sanidad)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                        <img src="~/images/about-image.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MENU-->
+    <section id="menu" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                        <h2>Imagenes del Menú</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- MENU THUMB -->
+                    <div class="menu-thumb">
+                        <a href="~/images/menu-image1.jpg" class="image-popup" title="PizzaBurguer">
+                            <img src="~/images/menu-image1.jpg" class="img-responsive" alt="">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>PizzaBurguer</h3>
+                                    <p>Pepperoni / Queso amarillo / Queso Oaxaca</p>
+                                </div>
+                                <div class="menu-price">
+                                    <span>$70</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="menu-thumb">
+                        <a href="~/images/hamburguesa sencilla.jpg" class="image-popup" title="Hamburguesa Sencilla">
+                            <img src="~/images/hamburguesa sencilla.jpg" class="img-responsive" alt="">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Hamburugesa Sencilla</h3>
+                                    <p>Carne / Jamón / Queso amarillo</p>
+                                </div>
+                                <div class="menu-price">
+                                    <span>$35</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="menu-thumb">
+                        <a href="~/images/Hamburguesa doble carne.jpg" class="image-popup" title="Hamburguesa Doble Carne con Tocino y Queso ">
+                            <img src="~/images/Hamburguesa doble carne.jpg" class="img-responsive" alt="">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Hamburguesa Doble Carne con Tocino y Queso</h3>
+                                    <p>Doble Carne / Tocino / Queso Oaxaca</p>
+                                </div>
+                                <div class="menu-price">
+                                    <span>$55</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- MENU THUMB -->
+                    <div class="menu-thumb">
+                        <a href="~/images/hot dog pepperoni.jpg" class="image-popup" title="Hot Dog con Pepperoni">
+                            <img src="~/images/hot dog pepperoni.jpg" class="img-responsive" alt="">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Hot Dog con Pepperoni</h3>
+                                    <p>Pepperoni / Queso Oaxaca</p>
+                                </div>
+                                <div class="menu-price">
+                                    <span>$20</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="menu-thumb">
+                        <a href="~/images/hot dog con sabritas.jpg" class="image-popup" title="Hot Dog con Sabritas">
+                            <img src="~/images/hot dog con sabritas.jpg" class="img-responsive" alt="">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Hot Dog con Sabritas </h3>
+                                    <p>Salchicha / Jamón / Sabritas</p>
+                                </div>
+                                <div class="menu-price">
+                                    <span>$20</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="menu-thumb">
+                        <a href="~/images/papas a la frncesa.jpg" class="image-popup" title="Papas a la Francesa">
+                            <img src="~/images/papas a la frncesa.jpg" class="img-responsive" alt="">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Papas a la Francesa</h3>
+                                </div>
+                                <div class="menu-price">
+                                    <span>$30</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- UBICAIÓN -->
+    <section id="contact" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+                    <div id="google-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3787.202510623003!2d-99.53176578563387!3d18.338043379518428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cc38641460e337%3A0x2c8f630c2275f1a8!2sAmado%20Nervo%2041%2C%20Vicente%20Guerrero%2C%2040080%20Iguala%20de%20la%20Independencia%2C%20Gro.!5e0!3m2!1ses!2smx!4v1629053701678!5m2!1ses!2smx"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="section-title">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">Ubicación</h2>
+                    <h3>Colonia: Vicente Guerrero</h3>
+                    <h3>Calle: Amado Nervo #41</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+     
+    <!-- FOOTER -->
+    <footer id="footer" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-8">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">Servicio a Domicilio</h2>
+                            <p>Con costo extra dependiendo de la zona</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-8">
+                    <div class="footer-info footer-open-hour">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">Horario</h2>
+                        </div>
+                        <div class="wow fadeInUp" data-wow-delay="0.4s">
+                            <div>
+                                <strong>Lunes a Domingo</strong>
+                                <p>5:00 PM - 11:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4">
+                    <div class="section-title">
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">Redes Sociales</h2>
+                    </div>
+                    <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+                        <li><a href="https://www.facebook.com/luis.mastache.14" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                        <li><a href="#" class="fa fa-whatsapp"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.stellar.min.js"></script>
+    <script src="~/js/wow.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/smoothscroll.js"></script>
+    <script src="~/js/custom.js"></script>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - The Capital Burguer - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

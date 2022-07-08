@@ -1,0 +1,27 @@
+﻿@model List<TheCapitalBurguer.Models.Menu>
+
+@{ 
+    ViewBag.Title = "Menu";
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Hamburguesa</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Menu in Model)
+        {
+            <tr>
+                <td>
+                    @Menu.Nombre
+                </td>
+                <td>
+                    @Menu.Precio
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
